@@ -1,10 +1,10 @@
 const router = require("express").Router();
-const articleController = require("../../controllers/articleController");
+const articlesController = require("../../controllers/articlesController");
 
 
 
 router.route("/")
-.post(articleController.create);
+.post(articlesController.create);
 
 
 
