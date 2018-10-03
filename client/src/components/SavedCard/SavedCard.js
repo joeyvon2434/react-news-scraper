@@ -1,18 +1,15 @@
 import React from "react";
-import "./ResultCard.css";
+import "./SavedCard.css";
 import API from "../../utils/API";
 
 
-class ResultCard extends React.Component {
+class SavedCard extends React.Component {
 
+    //move this function to the Saved Component when the API routes work
     handleFormSubmit = event => {
         event.preventDefault();
-        console.log('submitting form');
-        API.saveArticle({
-            title: this.props.title,
-            date: this.props.date,
-            url: this.props.url
-        })
+        console.log('removing card');
+        API.removeArticle(this.props.id)
         .then(res => console.log(res))
         .catch(err => console.log(err));
     }
@@ -27,11 +24,11 @@ class ResultCard extends React.Component {
                 <button
                 value={this.props.id}
                 onClick={this.handleFormSubmit}
-                >Save Article</button>
+                >Delete Article from Saved</button>
             </div>
 
         )
     }
 };
 
-export default ResultCard;
+export default SavedCard;

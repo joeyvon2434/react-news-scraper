@@ -1,16 +1,15 @@
 import React from "react";
 import "./SavedPage.css";
+import Saved from "../../components/Saved";
 
 
 class SavedPage extends React.Component {
 
-    state = {
-        results: []
-    }
-
     render () {
         return (
-            <div>Saved</div>
+            <div>
+                <Saved />
+            </div>
         )
     }
 };

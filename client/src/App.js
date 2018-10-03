@@ -4,6 +4,7 @@ import './App.css';
 import Home from "./pages/Home";
 import SearchPage from "./pages/SearchPage";
 import SavedPage from "./pages/SavedPage";
+import NavTabs from "./pages/NavTabs";
 
 class App extends React.Component {
 
@@ -11,6 +12,7 @@ class App extends React.Component {
     return (
       <Router>
         <div>
+          <NavTabs />
           <Route exact path="/" component={Home} />
           <Route exact path="/search" component={SearchPage} />
           <Route exact path="/saved" component={SavedPage} />
@@ -18,7 +20,6 @@ class App extends React.Component {
       </Router>
     )
   }
-
 }
 
 export default App;
