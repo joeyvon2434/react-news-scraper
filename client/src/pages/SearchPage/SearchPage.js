@@ -7,7 +7,7 @@ import API from "../../utils/API.js";
 class SearchPage extends React.Component {
 
     state = {
-        results: [],
+        results: ["placeholder"],
         topic: "",
         startDate: "",
         endDate: ""
@@ -37,9 +37,8 @@ class SearchPage extends React.Component {
     render() {
         return (
             <div>
-                Search
                 <Search handleInputChange={this.handleInputChange} handleFormSubmit={this.handleFormSubmit}/>
-                <Results results={this.state.results} />
+                {this.state.results[0] === "placeholder" ? <div></div> : <Results results={this.state.results} />}
             </div>
         )
     }

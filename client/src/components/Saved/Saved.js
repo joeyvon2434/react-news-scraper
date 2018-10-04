@@ -20,7 +20,7 @@ class Saved extends React.Component {
             console.log("'Saved Response");
             console.log(res);
             this.setState({
-                results: res
+                results: res.data
             });
         })
         .catch(err => console.log(err));

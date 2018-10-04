@@ -7,7 +7,8 @@ class Results extends React.Component {
     render() {
 
         return (
-            <div>Results
+            <div className="results-container">
+            <h2 className="results-title">Results</h2>
                 {this.props.results.map(article => (
                     <ResultCard
                         title={article.headline.main}

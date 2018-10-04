@@ -17,11 +17,12 @@ class SavedCard extends React.Component {
     render() {
         
         return (
-            <div>Result Card
+            <div className="saved-card">
                 <h2>{this.props.title}</h2>
                 <a href={this.props.url}>To Article</a>
                 <p>Published: {this.props.date}</p>
                 <button
+                className="btn btn-danger"
                 value={this.props.id}
                 onClick={this.handleFormSubmit}
                 >Delete Article from Saved</button>

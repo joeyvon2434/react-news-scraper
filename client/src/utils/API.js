@@ -21,6 +21,8 @@ export default {
     searchArticles: function (query, startDate, endDate) {
         const sortType = "newest";
         const url = BASEURL;
+        console.log(query);
+        console.log(startDate + endDate);
 
         return axios.get(url, {
             params: {

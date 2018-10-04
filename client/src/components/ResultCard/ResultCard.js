@@ -20,11 +20,12 @@ class ResultCard extends React.Component {
     render() {
         
         return (
-            <div>Result Card
+            <div className="results-card">
                 <h2>{this.props.title}</h2>
                 <a href={this.props.url}>To Article</a>
                 <p>Published: {this.props.date}</p>
                 <button
+                className="btn btn-primary"
                 value={this.props.id}
                 onClick={this.handleFormSubmit}
                 >Save Article</button>

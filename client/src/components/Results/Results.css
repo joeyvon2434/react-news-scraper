@@ -1,0 +1,12 @@
+.results-container {
+    border: 1px solid black;
+    margin: 2%;
+    padding: 4%;
+    box-shadow: 0 2px 3px rgb(58, 34, 34); 
+}
+
+.results-title {
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 110);
+}
