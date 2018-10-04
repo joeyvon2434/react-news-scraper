@@ -26,11 +26,13 @@ class Saved extends React.Component {
         .catch(err => console.log(err));
     }
 
+    
     render() {
         return (
-            <div>Saved
+            <div>
                 {this.state.results.map(article => (
                     <SavedCard
+                        getSavedArticles={this.getSavedArticles}
                         title={article.title}
                         url={article.url}
                         date={article.date}

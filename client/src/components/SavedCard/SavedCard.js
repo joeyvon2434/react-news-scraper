@@ -6,11 +6,14 @@ import API from "../../utils/API";
 class SavedCard extends React.Component {
 
     //move this function to the Saved Component when the API routes work
-    handleFormSubmit = event => {
+    handleFormSubmit = (event) => {
         event.preventDefault();
         console.log('removing card');
         API.removeArticle(this.props.id)
-        .then(res => console.log(res))
+        .then(results => {
+            console.log(results);
+            window.location.reload();
+        })
         .catch(err => console.log(err));
     }
 
@@ -22,6 +25,7 @@ class SavedCard extends React.Component {
                 <a href={this.props.url}>To Article</a>
                 <p>Published: {this.props.date}</p>
                 <button
+                type="submit"
                 className="btn btn-danger"
                 value={this.props.id}
                 onClick={this.handleFormSubmit}
