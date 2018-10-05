@@ -21,6 +21,7 @@ body {
   padding: 20px;
   margin: 0;
   background:rgb(122, 175, 224);
+  box-shadow: 0 3px 5px rgb(22, 22, 22);
 }
 
 .main-title {
