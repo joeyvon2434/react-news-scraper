@@ -6,20 +6,24 @@ import SearchPage from "./pages/SearchPage";
 import SavedPage from "./pages/SavedPage";
 import NavTabs from "./pages/NavTabs";
 import "./index.css";
+import Footer from "./components/Footer"
 
 class App extends React.Component {
 
   render() {
     return (
       <Router>
-        <div>
-          <NavTabs />
-          <div className="content-wrapper">
+        <div className="site-wrapper">
+          <div className="header-section">
+            <NavTabs />
             <h1 className="main-title">New York Times Summary</h1>
+          </div>
+          <div className="content-wrapper">
             <Route exact path="/" component={Home} />
             <Route exact path="/search" component={SearchPage} />
             <Route exact path="/saved" component={SavedPage} />
           </div>
+          <Footer />
         </div>
       </Router>
     )

@@ -27,7 +27,6 @@ class Home extends React.Component {
 
     render() { return (
         <div>
-            Home
             <Results results={this.state.results}/>
         </div>
     );

@@ -3,14 +3,28 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.site-wrapper {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
 .content-wrapper {
   display: block;
   width: 80%;
   margin: 3% auto;
 }
 
+.header-section{
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  background:rgb(122, 175, 224);
+}
+
 .main-title {
   text-align: center;
-  background: rgb(139, 173, 247);
+  background:rgb(122, 175, 224);
   padding: 0.5%;
 }
