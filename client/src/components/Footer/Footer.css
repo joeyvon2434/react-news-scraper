@@ -3,7 +3,8 @@
     width: 100%;
     margin: 2% 0 0 0;
     padding: 15px 0 5px 0;
-    background:rgb(122, 175, 224);
+    background: #7aafe0;
+    background-image: linear-gradient(to right,#7aafe0, #acc8e2, #7aafe0);
     box-shadow: 0 -3px 5px rgb(22, 22, 22);
     color: #0f497c;
     text-align: center;

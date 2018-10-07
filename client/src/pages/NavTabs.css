@@ -5,3 +5,7 @@
 .nav-elements {
     position: absolute;
 }
+
+.nav-link {
+    color: rgb(0, 0, 110);
+}
