@@ -3,10 +3,13 @@
     margin: 2%;
     padding: 4%;
     box-shadow: 0 2px 3px rgb(58, 34, 34); 
+    background:#C9CAD9;
 }
 
 .results-title {
     width: 100%;
     text-align: center;
     color: rgb(0, 0, 110);
+    font-size: 40px;
+    text-shadow: 1px 1px 1px white;
 }

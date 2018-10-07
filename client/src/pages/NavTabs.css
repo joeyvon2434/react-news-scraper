@@ -1,4 +1,7 @@
+.nav-tabs {
+    border: none;
+}
+
 .nav-elements {
     position: absolute;
-    left: 0;
 }

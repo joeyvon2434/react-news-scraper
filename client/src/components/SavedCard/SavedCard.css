@@ -1,9 +1,10 @@
 .saved-card {
-    width: 100%;
+    width: 90%;
     border: 1px solid black;
     box-shadow: 0 2px 3px rgb(58, 34, 34); 
-    margin: 3%;
+    margin: 3% auto;
     padding: 4%;
+    background: white;
 }
 
 button {

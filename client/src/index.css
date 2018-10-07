@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: rgb(243, 252, 255);
 }
 
 .site-wrapper {
@@ -18,7 +19,6 @@ body {
 
 .header-section{
   width: 100%;
-  padding: 20px;
   margin: 0;
   background:rgb(122, 175, 224);
   box-shadow: 0 3px 5px rgb(22, 22, 22);

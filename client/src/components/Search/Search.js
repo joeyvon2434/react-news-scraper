@@ -6,7 +6,7 @@ class Search extends React.Component {
     render() {
         return (
             <div className="search-box">
-            <h2>Article Search</h2>
+            <h2 className="search-title">Article Search</h2>
                 <label>Topic</label>
                 <br></br>
                 <input
